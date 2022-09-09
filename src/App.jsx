@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import { Fragment } from "react";
+import Header from "./components/Header/Header";
 
 function App() {
-
   return (
-    <h1>Vite + React</h1>
-  )
+    <Fragment>
+      <Header />
+    </Fragment>
+  );
 }
 
-export default App
+export default App;
