@@ -90,7 +90,7 @@ header {
   justify-content: center;
   font-family: "Lato";
   width: 50%;
-  gap: 15px 0;
+  gap: 20px 0;
 }
 .loginForm h2 {
   font-family: "Merriweather";
@@ -98,6 +98,9 @@ header {
 }
 .loginForm h4 {
   font-family: "Merriweather";
+}
+.loginForm h4 + h2 {
+  margin-top: 10px;
 }
 .loginForm button {
   width: 100%;
@@ -108,14 +111,25 @@ header {
 .loginForm a {
   color: #2b6cb0;
 }
+.loginForm a:hover {
+  text-decoration: underline;
+}
 
-.footer {
+.formTitle {
+  margin-bottom: 20px;
+}
+
+.reminders {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin: 10px 0;
+}
+.reminders input + label {
+  margin-left: 10px;
 }
 
 .mainLoginBtn {
@@ -155,4 +169,14 @@ header {
 }
 .input-container .filled {
   transform: translate(0, 12px) scale(0.8);
+}
+
+.registerLink {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 162px;
 }/*# sourceMappingURL=style.css.map */
