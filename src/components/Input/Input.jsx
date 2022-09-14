@@ -8,7 +8,7 @@ const LabeledInput = ({ id, fieldType, label }) => {
   }
 
   return (
-    <div className="input-container">
+    <div className="inputContainer">
       <input id={id} type={fieldType} value={value} onChange={handleChange} />
       <label htmlFor={id} className={value && 'filled'}>
         {label}

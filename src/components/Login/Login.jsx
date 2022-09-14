@@ -1,16 +1,16 @@
 import headerImage from "../../assets/images/header_img.svg";
-import LoginForm from "../LoginForm/LoginForm";
+import Form from "../Form/Form";
 
 const Header = () => {
   return (
-    <header>
+    <div className="container">
       <div className="leftContainer">
         <img src={headerImage} alt="Header" />
       </div>
       <div className="rightContainer">
-        <LoginForm />
+        <Form />
       </div>
-    </header>
+    </div>
   );
 };
 

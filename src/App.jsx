@@ -1,10 +1,10 @@
 import { Fragment } from "react";
-import Header from "./components/Header/Header";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
     <Fragment>
-      <Header />
+      <Login />
     </Fragment>
   );
 }

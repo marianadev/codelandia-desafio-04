@@ -1,0 +1,34 @@
+.inputContainer {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    font-size: 14px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 30px 0 10px 16px;
+  }
+
+  label {
+    position: absolute;
+    pointer-events: none;
+    transform: translate(0, 23px) scale(1);
+    transform-origin: top left;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    color: #6f81a5;
+    font-size: 16px;
+    line-height: 1;
+    left: 16px;
+  }
+
+  &:focus-within label {
+    transform: translate(0, 12px) scale(0.8);
+  }
+
+  .filled {
+    transform: translate(0, 12px) scale(0.8);
+  }
+}
