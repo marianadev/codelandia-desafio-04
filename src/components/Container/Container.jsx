@@ -1,17 +1,19 @@
 import headerImage from "../../assets/images/header_img.svg";
-import Form from "../Form/Form";
+import LoginForm from "../LoginForm/LoginForm";
+import Register from "../Register/Register";
 
-const Header = () => {
+const Container = () => {
   return (
     <div className="container">
       <div className="leftContainer">
         <img src={headerImage} alt="Header" />
       </div>
       <div className="rightContainer">
-        <Form />
+        <LoginForm />
+        <Register />
       </div>
     </div>
   );
 };
 
-export default Header;
+export default Container;

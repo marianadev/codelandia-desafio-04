@@ -20,7 +20,6 @@ const LoginForm = () => {
         <img src={googleIcon} alt="Google icon" />
         Ou faça login com o Google
       </button>
-      <div className="register">Não tem uma conta? <a href="/">Cadastre-se</a></div>
     </form>
   );
 };

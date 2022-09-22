@@ -1,10 +1,10 @@
 import { Fragment } from "react";
-import Login from "./components/Login/Login";
+import Container from "./components/Container/Container";
 
 function App() {
   return (
     <Fragment>
-      <Login />
+      <Container />
     </Fragment>
   );
 }

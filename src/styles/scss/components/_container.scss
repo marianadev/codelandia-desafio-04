@@ -1,0 +1,37 @@
+@use "../abstracts/" as *;
+
+#root {
+  height: 100%;
+}
+
+.container {
+  @include flex(nowrap, row, center, space-between);
+  font-family: "Lato";
+  height: 100%;
+}
+
+.leftContainer {
+  @include flex(nowrap, row, center, center);
+  width: 50%;
+  height: 100%;
+  background-color: $white300;
+
+  img {
+    width: 50%;
+  }
+
+  @media (max-width: 480px) {
+    width: 0;
+    visibility: hidden;
+  }
+}
+
+.rightContainer {
+  @include flex(nowrap, column, center, center);
+  width: 50%;
+  height: 100%;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
