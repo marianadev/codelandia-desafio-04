@@ -1,7 +1,10 @@
 const LoginForm = () => {
   return (
     <div className="register">
-      Não tem uma conta? <a href="/">Cadastre-se</a></div>
+      <p>
+        Não tem uma conta? <a href="/">Cadastre-se</a>
+      </p>
+    </div>
   );
 };
 
