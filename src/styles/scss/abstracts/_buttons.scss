@@ -10,15 +10,27 @@ button {
   border-radius: 5px;
   color: #ffffff;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   img {
     padding: 0 10px;
   }
 
   &.mainLoginBtn {
     background: #04c45c;
+
+    &:hover {
+      background: #0acd65;
+    }
   }
 
   &.googleLoginBtn {
     background: #1a202c;
+
+    &:hover {
+      background: #30394b;
+    }
   }
 }

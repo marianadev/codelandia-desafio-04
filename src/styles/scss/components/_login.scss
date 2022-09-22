@@ -1,22 +1,56 @@
 @use "../abstracts/" as *;
 
-.container {
-  @include flex(nowrap, row, center, space-between);
-}
-
-.leftContainer {
-  @include flex(nowrap, row, center, center);
+.loginForm {
+  @include flex(nowrap, column, flex-start, center);
   width: 50%;
-  height: 100%;
-  background-color: $white300;
+  gap: 20px 0;
 
-  img {
-    width: 50%;
+  h2 {
+    font-family: "Merriweather";
+    font-weight: 700;
+  }
+
+  h4 {
+    font-family: "Merriweather";
+  }
+
+  h4 + h2 {
+    margin-top: 10px;
+  }
+
+  @media (max-width: 1280px) {
+    width: 60%;
+  }
+
+  @media (max-width: 1024px) {
+    width: 70%;
+  }
+
+  @media (max-width: 767px) {
+    width: 80%;
+    margin-bottom: 100px;
   }
 }
 
-.rightContainer {
-  @include flex(nowrap, column, center, center);
-  width: 50%;
-  height: 100%;
+.formTitle {
+  margin-bottom: 10px;
+
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.reminders {
+  @include flex(wrap, row, center, space-between);
+  width: 100%;
+  margin: 10px 0;
+  font-size: 14px;
+
+  input + label {
+    margin-left: 10px;
+  }
 }
